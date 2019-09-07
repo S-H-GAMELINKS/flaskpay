@@ -1,10 +1,9 @@
 import Vue from 'vue';
+import Checkout from '../components/Checkout.vue';
 
 const app = new Vue({
     el: '#app',
-    data: function() {
-        return {
-            message: "Hello World!"
-        }
+    components: {
+        'payjp-checkout': Checkout
     }
 });
